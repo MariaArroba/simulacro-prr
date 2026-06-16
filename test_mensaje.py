@@ -19,5 +19,15 @@ class TestMensaje(unittest.TestCase):
             'TOTAL: 3 FRASES 3 LINEAS'
         )
 
+    def test_frase_devuelve_una_frase(self):
+     frases = ['uno', 'dos', 'tres']
+     respuesta = procesar('FRASE', frases)
+
+     self.assertIn(
+         respuesta.replace('FRASE: ', ''),
+         frases
+     )
+
+
 if __name__ == '__main__':
     unittest.main()
