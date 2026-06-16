@@ -2,6 +2,7 @@ def procesar(comando, frases):
     comando = comando.strip()
 
     if comando == 'TOTAL':
-        return f'TOTAL: {len(frases)} FRASES'
+        lineas = len(frases)
+        return f'TOTAL: {len(frases)} FRASES {lineas} LINEAS'
 
     return 'ERROR'

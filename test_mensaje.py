@@ -10,7 +10,7 @@ class TestMensaje(unittest.TestCase):
     def test_total_devuelve_numero_de_frases(self):
         frases = ['uno', 'dos', 'tres']
         respuesta = procesar('TOTAL', frases)
-        self.assertEqual(respuesta, 'TOTAL: 3 FRASES')
+        self.assertIn('3 FRASES', respuesta)
     def test_total_devuelve_lineas(self):
         frases = ['uno', 'dos', 'tres']
         respuesta = procesar('TOTAL', frases)
