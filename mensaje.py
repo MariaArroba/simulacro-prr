@@ -7,7 +7,7 @@ def procesar(comando, frases):
         lineas = len(frases)
         return f'TOTAL: {len(frases)} FRASES {lineas} LINEAS'
 
-    if comando == 'FRASE':
+    elif comando == 'FRASE':
         return 'FRASE: ' + random.choice(frases)
 
     return 'ERROR'
