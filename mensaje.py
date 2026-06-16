@@ -1,3 +1,5 @@
 def procesar(comando, frases):
-# por ahora cualquier comando devuelve error
+    if comando == 'TOTAL':
+        return f'TOTAL: {len(frases)} FRASES'
+
     return 'ERROR'
